@@ -5,6 +5,9 @@ require 'sinatra/activerecord'
 
 require 'sinatra/reloader' if Sinatra::Base.environment == :development
 
+
+require_relative 'models/user'
+
 class App < Sinatra::Application
   def initialize(app = nil)
     super()
