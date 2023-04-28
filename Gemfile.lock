@@ -28,8 +28,10 @@ GEM
 
 PLATFORMS
   arm64-darwin-21
+  ruby
 
 DEPENDENCIES
+  multi_json
   sinatra!
   sinatra-contrib!
 
