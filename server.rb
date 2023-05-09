@@ -26,6 +26,7 @@ class App < Sinatra::Application
     register Sinatra::Reloader
     after_reload do
       puts 'Reloaded...'
+      logger.info 'Reloaded!!!'
     end
   end
 

@@ -1,7 +1,9 @@
-From ruby:2.7.5
+FROM ruby:2.7.5
 
 ADD . /src
 WORKDIR /src
+ENV BUNDLE_APP_CONFIG=/src/.bundler
+RUN gem install bundler:2.3.7
 
 RUN bundle install
 
